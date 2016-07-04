@@ -138,7 +138,7 @@ textarea.form-control {
  * Custom button style
 /* ---------------------------------------------- */
 .btn {
-	font-family: Raleway, sans-serif;
+	font-family: "Microsoft YaHei", Raleway, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 13px;
