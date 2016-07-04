@@ -1,0 +1,44 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "website for www.out2man.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovelypig5/site.git"
+  },
+  "keywords": [
+    "out2man",
+    "introduction"
+  ],
+  "author": "out2man",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lovelypig5/site/issues"
+  },
+  "homepage": "https://github.com/lovelypig5/site#readme",
+  "kil": {
+    "port": 9000,
+    "mock": false,
+    "react": false,
+    "html5Mode": false,
+    "es7": false,
+    "webpack": {
+      "output": {
+        "*.html": {}
+      },
+      "commonTrunk": {},
+      "global": {},
+      "devServer": {
+        "proxy": {}
+      }
+    },
+    "copy": []
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
