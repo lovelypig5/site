@@ -7,6 +7,7 @@ module.exports = (modulePath) => {
     return {
         // if single entry is used, bundle name will be named as main.js
         entry: {
+            main: './js/index.js'
         },
         // plugins example, default no more
         plugins: [
@@ -17,11 +18,11 @@ module.exports = (modulePath) => {
             new HtmlWebpackPlugin({
                 template: './index.html',
                 filename: './index.html',
-                chunks: []
+                chunks: ['main']
             })
         ],
         module: {
-            loaders: []
+            rules: []
         },
         externals: [],
         devServer: {

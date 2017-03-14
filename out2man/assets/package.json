@@ -41,6 +41,8 @@
   "dependencies": {
     "animate.css": "^3.5.1",
     "bootstrap": "^3.3.6",
-    "font-awesome": "^4.6.3"
+    "font-awesome": "^4.6.3",
+    "jshint": "^2.9.4",
+    "jshint-loader": "^0.8.4"
   }
 }
