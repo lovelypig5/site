@@ -1,4 +1,4 @@
-# out2man
-official website
-# game
-game website
+# Out2man
+Official website
+# Game
+Game website for The King of Fighters
