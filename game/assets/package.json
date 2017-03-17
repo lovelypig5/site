@@ -1,0 +1,39 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "kil": {
+    "port": 9000,
+    "vue": false,
+    "react": true,
+    "html5Mode": false,
+    "es7": false,
+    "webpack": {
+      "output": {
+        "*.html": {}
+      },
+      "commonTrunk": {},
+      "global": {},
+      "devServer": {
+        "proxy": {
+          "/test_/?*": "please change or remove this as you need"
+        }
+      }
+    },
+    "copy": []
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "babel-plugin-react-transform": "^2.0.0",
+    "babel-preset-react": "^6.11.1",
+    "react-transform-hmr": "^1.0.1"
+  }
+}
