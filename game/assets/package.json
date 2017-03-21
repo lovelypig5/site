@@ -14,26 +14,16 @@
     "react": true,
     "html5Mode": false,
     "es7": false,
-    "webpack": {
-      "output": {
-        "*.html": {}
-      },
-      "commonTrunk": {},
-      "global": {},
-      "devServer": {
-        "proxy": {
-          "/test_/?*": "please change or remove this as you need"
-        }
-      }
-    },
     "copy": []
   },
   "dependencies": {
+    "babel-plugin-react-transform": "^2.0.0",
+    "babel-preset-react": "^6.11.1",
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
     "jquery": "^3.1.1",
-    "babel-plugin-react-transform": "^2.0.0",
-    "babel-preset-react": "^6.11.1",
-    "react-transform-hmr": "^1.0.1"
+    "react-transform-hmr": "^1.0.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   }
 }

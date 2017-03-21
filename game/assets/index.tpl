@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="root">
         <div class="row templatemorow">
             <div class="hex col-sm-6">
                 <div>
