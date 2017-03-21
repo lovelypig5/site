@@ -13,13 +13,14 @@ module.exports = (modulePath) => {
         // if single entry is used, bundle name will be named as main.js
         entry: {
             main: "./index",
-            common: ['jquery']
+            common: ['jquery', 'react', 'react-dom']
         },
         // plugins example, default no more
         plugins: [
             new webpack.ProvidePlugin({
                 $: "jquery",
-                jQuery: "jquery"
+                jQuery: "jquery",
+                React: "react"
             }),
             new HtmlWebpackPlugin({
                 template: './index.tpl',
