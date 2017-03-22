@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom';
-import element from 'templates/hello.jsx';
+import Hexagon from 'templates/hello.jsx';
 
-ReactDOM.render(element, document.getElementById('root'));
+ReactDOM.render(
+    <Hexagon image="images/gallery/1.jpg"/>, $('.templatemorow')[0]);
