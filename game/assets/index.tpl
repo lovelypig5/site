@@ -13,21 +13,7 @@
 
 <body>
     <div class="container">
-        <div class="row templatemorow">
-            <!-- <div class="hex col-sm-6">
-                <div>
-                    <div class="hexagon hexagon2 gallery-item">
-                        <div class="hexagon-in1">
-                            <div class="hexagon-in2" style="background-image: url(images/gallery/1.jpg);">
-                                <div class="overlay">
-                                    <a href="images/gallery/1.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-        </div>
+        <div class="app"></div>
     </div>
 </body>
 

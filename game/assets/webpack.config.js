@@ -13,14 +13,15 @@ module.exports = (modulePath) => {
         // if single entry is used, bundle name will be named as main.js
         entry: {
             main: "./index",
-            common: ['jquery', 'react', 'react-dom']
+            common: ['jquery', 'react', 'react-dom', 'whatwg-fetch']
         },
         // plugins example, default no more
         plugins: [
             new webpack.ProvidePlugin({
                 $: "jquery",
                 jQuery: "jquery",
-                React: "react"
+                React: "react",
+                fetch: "whatwg-fetch"
             }),
             new HtmlWebpackPlugin({
                 template: './index.tpl',
