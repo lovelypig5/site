@@ -6,7 +6,7 @@ class Hexagon extends React.Component {
 
     render() {
         let index = this.props.index;
-        let size = this.props.size;
+        let size = this.props.size || 0;
         if (size < 3) {
             size = 3;
         }
@@ -27,7 +27,7 @@ class Hexagon extends React.Component {
                     <div className="hexagon hexagon2">
                         <div className="hexagon-in1">
                             <div className="hexagon-in2" style={{
-                                backgroundImage: "url(" + this.props.image || 'default' + ")"
+                                backgroundImage: "url(" + this.props.data.image || 'default' + ")"
                             }}></div>
                         </div>
                     </div>

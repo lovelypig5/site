@@ -7,15 +7,14 @@ class App extends React.Component {
         super();
 
         this.state = {
-            images: [],
-            size: 0
+            data: []
         }
     }
 
     render() {
         let a = [];
-        this.state.images.map((image, index) => {
-            a.push(<Hexagon image={image} index={index} size={this.state.size} key={'image' + index}/>);
+        this.state.data.map((item, index) => {
+            a.push(<Hexagon data={item} index={index} size={this.state.size} key={'image' + index}/>);
         });
         return <div>{a}</div>
     }
@@ -27,42 +26,113 @@ class App extends React.Component {
             })
         }, 100)
         this.setState({
-            images: [
-                '../images/team/1.jpg',
-                '../images/team/2.jpg',
-                '../images/team/3.jpg',
-                '../images/team/4.jpg',
-                '../images/team/1.jpg',
-                '../images/team/2.jpg',
-                '../images/team/3.jpg',
-                '../images/team/4.jpg',
-                '../images/team/1.jpg',
-                '../images/team/2.jpg',
-                '../images/team/3.jpg',
-                '../images/team/4.jpg',
-                '../images/team/1.jpg',
-                '../images/team/2.jpg',
-                '../images/team/3.jpg',
-                '../images/team/4.jpg',
-                '../images/team/1.jpg',
-                '../images/team/2.jpg',
-                '../images/team/3.jpg',
-                '../images/team/4.jpg',
-                '../images/team/4.jpg',
-                '../images/team/1.jpg',
-                '../images/team/2.jpg',
-                '../images/team/3.jpg',
-                '../images/team/4.jpg',
-                '../images/team/4.jpg',
-                '../images/team/1.jpg',
-                '../images/team/2.jpg',
-                '../images/team/3.jpg',
-                '../images/team/4.jpg',
-                '../images/team/4.jpg',
-                '../images/team/1.jpg',
-                '../images/team/2.jpg',
-                '../images/team/3.jpg',
-                '../images/team/4.jpg'
+            data: [
+                {
+                    image: '../images/cover/Yashino.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/Kyo.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/Zero.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/4.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/1.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/2.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/3.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/4.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/1.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/2.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/3.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/4.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/1.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/2.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/3.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/4.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/1.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/2.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/3.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/4.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/4.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/1.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/2.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/3.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/4.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/4.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/1.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/2.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/3.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/4.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/4.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/1.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/2.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/3.jpg',
+                    name: "kyo"
+                }, {
+                    image: '../images/cover/4.jpg',
+                    name: "kyo"
+                }
             ]
         })
 
