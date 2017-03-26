@@ -1,12 +1,15 @@
 var Service = require('./service');
-var userDao = require('../dao/userDao');
+var restDao = require('../dao/restDao');
 
 class RestService extends Service {
 
-    doSomething() {
-        return this.db.transaction((transaction) => {
-            return userDao.doSomething();
-        });
+    async getPlayers() {
+        var records = await restDao.getPlayers();
+        var result = [];
+        records.forEach((record) => {
+            result.push(record.toObject());
+        })
+        return records;
     }
 
 }

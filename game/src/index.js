@@ -14,9 +14,9 @@ const app = new Koa();
 //     }
 // })
 
-app.use((ctx, next) => {
+app.use(async(ctx, next) => {
     logger.info('%s %s', ctx.req.method, ctx.req.url);
-    next();
+    await next();
 });
 
 apis.forEach((api) => {
