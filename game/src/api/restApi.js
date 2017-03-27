@@ -4,8 +4,7 @@ var restService = require('../service/restService');
 class RestApi extends BaseApi {
 
     async list(ctx, next) {
-        var a = await restService.getPlayers();
-        ctx.body = a;
+        ctx.body = await restService.getPlayers();
     }
 }
 

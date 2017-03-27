@@ -7,9 +7,9 @@ class RestService extends Service {
         var records = await restDao.getPlayers();
         var result = [];
         records.forEach((record) => {
-            result.push(record.toObject());
-        })
-        return records;
+            result.push(record.get('n').properties);
+        });
+        return result;
     }
 
 }
