@@ -27,7 +27,7 @@ class Hexagon extends React.Component {
                     <div className="hexagon hexagon2">
                         <div className="hexagon-in1">
                             <div className="hexagon-in2" style={{
-                                backgroundImage: "url(" + this.props.data.image || 'default' + ")"
+                                backgroundImage: "url('" + this.props.data.image || 'default' + "')"
                             }}></div>
                         </div>
                     </div>

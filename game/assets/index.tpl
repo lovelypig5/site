@@ -12,9 +12,7 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="app"></div>
-    </div>
+    <div class="app"></div>
 </body>
 
 </html>

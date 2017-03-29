@@ -15,14 +15,12 @@ module.exports = (modulePath) => {
             main: "./index",
             common: ['jquery', 'react', 'react-dom', 'whatwg-fetch']
         },
+        output: {
+            publicPath: '/'
+        },
         // plugins example, default no more
         plugins: [
-            new webpack.ProvidePlugin({
-                $: "jquery",
-                jQuery: "jquery",
-                React: "react",
-                fetch: "whatwg-fetch"
-            }),
+            new webpack.ProvidePlugin({$: "jquery", jQuery: "jquery", React: "react", fetch: "whatwg-fetch"}),
             new HtmlWebpackPlugin({
                 template: './index.tpl',
                 filename: './index.html',
@@ -48,9 +46,9 @@ module.exports = (modulePath) => {
         },
         externals: [],
         devServer: {
-            // proxy: {
-            //     '*': 'http://localhost:3000'
-            // }
+            proxy: {
+                '/api': 'http://localhost:3000'
+            }
         }
     };
 };
